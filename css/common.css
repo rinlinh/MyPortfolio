@@ -1,0 +1,306 @@
+@charset "utf-8";
+
+/* ------初期設定------ */
+
+body {
+  /* font-size: 15px; */
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-break: break-all;
+  color: #555;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* ------header------ */
+.nav_all {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 20%);
+  background-color: rgba(255, 255, 255,50%);
+}
+
+.nav_top {
+  padding-left: 20px;
+  height: 50px;
+}
+
+.nav_top:hover {
+   transform: rotate(20deg);
+}
+
+.nav_list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_item {
+  padding: 10px 25px;
+}
+
+.nav_item:nth-of-type(4) {
+  padding-right: 70px;
+}
+
+.nav_link {
+  color: #555;
+  font-size: 20px;
+}
+
+.nav_link:hover {
+  color: #0bd;
+}
+
+
+/* ------main------ */
+/* ---.top--- */
+
+.top {
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/S__273227800.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -210px;
+  background-attachment: fixed;
+  /* position: fixed; */
+  z-index: 5;
+}
+
+.top_title {
+  display: flex;
+  color: #fff;
+  font-size: 50px;
+  font-family: 'Pattaya', sans-serif;
+  font-weight: lighter;
+  text-shadow: 2px 2px 2px#555;
+  left: calc((100% - 290px) / 2);
+  /* align-items: center; これだとずれる */
+  position: fixed;
+  top: 200px;
+  z-index: 10;
+}
+/* ------section------ */
+.section {
+  padding: 0 50px;
+  height: 600px;
+  position: relative;
+  z-index: 20;
+}
+
+.section_title {
+  font-size: 45px;
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+  padding-top: 60px;
+  letter-spacing: 2px;
+}
+
+.section_comment {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* ---.profile--- */
+.profile {
+  background-color: #ffff;
+} 
+
+.profile_all {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.profile_img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  /* box-shadow: -5px 2px 2px 5px rgb(5, 5, 5) */
+}
+
+.profile_img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile_items {
+  margin-left: 150px;
+}
+
+.profile_item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.profile_subtitle, .profile_body {
+  font-size: 14px;
+}
+
+.profile_subtitle {
+  width: 100px;
+}
+
+.profile_body {
+  margin-left: 30px;
+}
+
+
+/* ---.skill--- */
+.skill {
+  background-color: #ffff;
+  background-image: url(../img/aleksandra-wantuch-ZqKYkwSfsJQ-unsplash.jpg);
+  background-size: cover;
+  /*下部分を表示したい*/
+}
+
+#skill .bg_mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,.7);
+}
+
+.skill_all {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.skill_item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  /* width: 300px; */
+}
+
+.skill_img {
+  width: 60px;
+}
+
+.img_set {
+  display: flex;
+  margin-left: -15px;
+}
+
+.skill_body {
+  margin-left: 20px;
+  width: 400px;
+}
+
+.skill_body p {
+  font-size: 14px;
+  line-height: 1;
+}
+
+/*  ---.works---*/
+#works {
+  height: 800px; /* 中身長かったから伸ばした */
+}
+
+.works {
+  background-color: #ffff;
+}
+.work_all {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work_item {
+  flex: 50px;
+  /* display: block; */
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.work_item:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.work_img {
+  width: 200px;
+  height: 200px;
+}
+
+.work_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.work_name {
+  text-align: center;
+  width: 200px;
+  font-size: 14px;
+}
+
+/* ---.contact--- */
+.contact {
+  background-color: #eee;
+  height: 500px;
+}
+
+form ul {
+  width: 350px;
+  margin: 0 auto;
+}
+
+form ul li {
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 200px;
+}
+
+textarea {
+  height: 50px;
+}
+
+input#button {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+
+input#button:hover {
+  cursor: pointer;
+}
+
+
+label {
+  margin-right: 15px;
+  font-size: 13px;
+  width: 100px;
+  float: left;
+}
+
+
+
+
+/* ------footer------ */
+footer {
+  background-color: #555;
+  color: #fff;
+}
+
+.copyright{
+  text-align: center;
+  padding: 20px;
+}
